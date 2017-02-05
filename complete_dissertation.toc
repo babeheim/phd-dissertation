@@ -1,0 +1,42 @@
+\contentsline {chapter}{\numberline {1}Ecology, Inheritance, and the Evolution of the Canoes of East Oceania}{1}
+\contentsline {section}{\numberline {1.1}Introduction}{1}
+\contentsline {subsection}{\numberline {1.1.1}Canoe evolution in Polynesia \& Fiji}{3}
+\contentsline {section}{\numberline {1.2}The Model Selection Approach}{4}
+\contentsline {subsection}{\numberline {1.2.1}Models of Cultural Inheritance}{5}
+\contentsline {subsection}{\numberline {1.2.2}Models of Ecology}{7}
+\contentsline {subsection}{\numberline {1.2.3}Model Specification and Estimation Using Bayesian Statistics}{9}
+\contentsline {section}{\numberline {1.3}Results}{10}
+\contentsline {subsection}{\numberline {1.3.1}Model rankings}{11}
+\contentsline {subsection}{\numberline {1.3.2}Effects of single covariates}{14}
+\contentsline {section}{\numberline {1.4}Discussion}{15}
+\contentsline {section}{\numberline {1.5}Appendix to Chapter 1}{18}
+\contentsline {subsection}{\numberline {1.5.1}Canoe Supplement}{18}
+\contentsline {subsection}{\numberline {1.5.2}Model Selection Methods}{19}
+\contentsline {subsection}{\numberline {1.5.3}Data Reprocessing}{21}
+\contentsline {subsection}{\numberline {1.5.4}Model Specification and Estimation}{22}
+\contentsline {chapter}{\numberline {2}Evolutionary Decomposition and the Mechanisms of Cultural Change}{32}
+\contentsline {section}{\numberline {2.1}Introduction}{32}
+\contentsline {section}{\numberline {2.2}The RTDICE Decomposition}{35}
+\contentsline {section}{\numberline {2.3}An Island Simulation: The Rise of Snoobism}{41}
+\contentsline {section}{\numberline {2.4}Comparing Mechanisms of Cultural Change}{45}
+\contentsline {section}{\numberline {2.5}Discussion}{48}
+\contentsline {section}{\numberline {2.6}Appendix to Chapter 2}{51}
+\contentsline {subsection}{\numberline {2.6.1}Extended Analysis of Individual Change}{51}
+\contentsline {subsubsection}{Individual Change - What SnoobSim is Actually Doing}{55}
+\contentsline {subsection}{\numberline {2.6.2}Analysis of RS Term}{57}
+\contentsline {subsubsection}{Reproductive Success: What SnoobSim is Actually Doing}{61}
+\contentsline {subsection}{\numberline {2.6.3}Analysis of Mortality Term}{62}
+\contentsline {subsubsection}{Mortality - What SnoobSim is Actually Doing}{63}
+\contentsline {subsection}{\numberline {2.6.4}SnoobSim Documentation}{65}
+\contentsline {chapter}{\numberline {3}Evidence of Strategic Social Learning and Evolutionary Arms Races in the Opening Moves of the Game of Go}{70}
+\contentsline {section}{\numberline {3.1}Introduction}{70}
+\contentsline {section}{\numberline {3.2}Professional Go}{74}
+\contentsline {subsection}{\numberline {3.2.1}Historical Patterns of Opening Play}{78}
+\contentsline {section}{\numberline {3.3}Cultural Change: Learning versus Demography?}{82}
+\contentsline {section}{\numberline {3.4}Are Go Players Social Learners?}{85}
+\contentsline {subsection}{\numberline {3.4.1}Methods}{87}
+\contentsline {subsection}{\numberline {3.4.2}Results}{89}
+\contentsline {section}{\numberline {3.5}Arms Races and Innovation Cycles}{94}
+\contentsline {subsection}{\numberline {3.5.1}Period I: Initial Rise, 1967-1977}{94}
+\contentsline {subsection}{\numberline {3.5.2}Period II: Counterinnovation and Decline, 1977-1984}{97}
+\contentsline {section}{\numberline {3.6}Discussion}{100}

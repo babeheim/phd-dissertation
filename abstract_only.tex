@@ -1,0 +1,101 @@
+
+% LaTeX template file for a UC Davis Mathematics Ph.D. Dissertation
+
+
+% The UC Davis Dissertation Formatting Requirements can be found at
+% http://www.gradstudies.ucdavis.edu/students/filing.html
+
+
+% SPECIFY AN APPROPRIATE DOCUMENT CLASS WITH APPROPRIATE OPTIONS:
+\documentclass[letterpaper, 12pt, oneside]{book}
+
+% SPECIFY THE PAGE AND HEADER FORMATTING (which is completely a hack):
+    \usepackage[left=108pt, right=74pt, top=108pt, bottom=81pt, dvips, pdftex]{geometry}
+    \usepackage{fancyhdr} % See this package's documentation for more
+    \usepackage{natbib}
+    \usepackage{rotating} % needed to get sidewaystable to work
+    \pagestyle{fancy}     % information about the following commands
+    \renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+    \fancyhf{}
+    \fancyhead[R]{\thepage}
+    \fancyhead[L]{\rightmark}
+    \renewcommand{\headrulewidth}{0pt} % change this to put a line between
+                                       % the header and the main text
+    
+    % The following command sets the name of the Bibliography:
+    \renewcommand{\bibname}{References}
+  
+    % EXTREMELY COMMON LaTeX PACKAGES TO INCLUDE:
+    \usepackage{amsmath,amsthm, amsfonts,amssymb} % For AMS Beautification
+    \usepackage{setspace} % For Single & Double Spacing Commands
+%    \usepackage[linktocpage,bookmarksopen,bookmarksnumbered,% For PDF navigation
+%                pdftitle={UC Davis Ph.D. Doctoral Thesis},%   and URL hyperlinks
+%                pdfauthor={Department of Mathematics},%
+%                pdfsubject={UC Davis Ph.D. Doctoral Thesis},%
+%                pdfkeywords={UC Davis Ph.D. Doctoral Thesis}]{hyperref}
+    
+    \usepackage{graphicx} % For including and formatting image files
+    \usepackage[toc,page]{appendix} % For Control of Appendix Numbering & Location
+   
+   
+		\DeclareMathOperator{\cov}{cov}
+
+    
+    % DEFINE NEW ANY COMMANDS (for your own convenience):
+    \newcommand{\n}{\vspace{12pt}} % for typesetting line breaks with 12
+                                   % Postscript points of extra whitespace
+      
+    \newcommand{\newchapter}[3] % for typesetting new chapters with the
+	{                           % correct initial page numbering style
+        % Arguments: (#1) Short name for chapter, which is used in 
+        %                 any running headers
+        %            (#2) Medium length name for chapter, which is
+        %                 used in the table of contents
+        %            (#3) Long name for chapter, which is typeset at 
+        %                 the starting the chapter
+        \chapter[#2]{#3}
+        \chaptermark{#1}
+        \thispagestyle{myheadings}
+	}
+
+
+	
+	
+\begin{document}
+     
+	 
+	 \thispagestyle{empty}
+	 
+	 \doublespacing
+
+    ~\vspace{-1in} % to force the attribution text up a bit higher
+    \begin{flushright}
+		\singlespacing
+        Bret Alexander Beheim\\
+        ~September 2012\\
+        Graduate Group in Ecology
+    \end{flushright}
+
+    \centerline{\large Inferring General Mechanisms of Cultural Evolution in Observational Settings}
+    
+    \centerline{\textbf{\underline{Abstract}}}
+ 
+
+    
+        % Either type your Abstract Text here or input a file 
+        % containing it:
+        The study of human history and human behavior has been greatly advanced by integrating our species within the larger study of ecology and evolution.  Yet humans differ from other organisms on Earth in a number of ways; one of the most important is our unique capacity for cumulative transmission of knowledge, behaviors and technologies. This process enables us to move into environments well outside the tropical forager niche for which we are mostly adapted, and realize lifestyles unprecedented in the history of life.  
+
+Studying this process as a Darwinian system of inheritance is the next step in this integration.  Within the last three decades, this approach has been rigorously formulated by a set of mathematical models exploring how human learning and decision-making scale up to population-level dynamics.  These models have motivated a large body of experimental work using economic games, but have had less success in contexts outside of a controlled environment.  Here I present there three topics in the study of cultural transmission and inheritence that extend this work into observational contexts, and show how we can use Darwinian evolutionary theory to study topics in ecology, demoraphy, and the historical record, in that order.  
+
+The first paper explores the geographic distribution of Oceanic canoe designs, as recorded by early 20th century maritime anthropologists.  We test how different aspects of these designs are associated with key ecological factors on the Pacific islands they appear, and social proximity to other island groups both in the Polynesian settlement sequence and known trade routes.  In particular, we find statistical evidence that many canoe designs common in low-resource Oceanic islands tend to be abandoned upon reaching the high-resource environments of Hawaii and New Zealand, a kind of ecological release in technological design.  
+
+The second paper is on evolutionary methods, and focuses on how we can quantify the importance of demographic processes on observed phenotypic change within a population.  This methodology, which we call \textit{evolutionary decomposition}, exactly partitions a phenotypic trajectory into meaningful terms, allowing us to say how much differential reproductive success, migration, mortality, individual change, and parent-offspring transmission fidelity influence a cultural change.  We demonstrate how this can be applied to historical demography by decomposing census data drawn from a large-scale simulation involving tens of thousands of humans in a growing population over several centuries.
+
+The third paper attempts to understand observed historical changes in a real-world dataset, a large collection of games of the East Asian board game known as Go.  Here we combine the statistical tools of the first paper with the decompostion methods of the second to examine an extraordinarily high-resolution record of cultural change.  Here we are able to demonstrate conclusively that (a) these trends are due almost entirely to learning within the population, rather than cohort effects, and (b) there is strong evidence that this learning is social in nature, as players draw upon the knowledge available in the experiences of others.  These results provide an excellent reconstruction of the historical record, and are used to describe an ongoing evolutionary arms race taking place within the opening moves of Go.  
+
+Taken together, these three papers demonstrate how cultural evolution models can inform research in anthropology and history, and hopefully resolve debates in these fields about whether historical cultural dynamics can be thought of in evolutionary terms.  
+
+
+
+\end{document}	
