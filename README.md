@@ -2,7 +2,7 @@
 phd-dissertation
 ============
 
-This is the latex code for my dissertation, "Inferring General Mechanisms of Cultural Evolution in Observational Settings", filed in the fall of 2012.
+This is the latex code for my dissertation, "Inferring General Mechanisms of Cultural Evolution in Observational Settings", filed at the University of California at Davis in the fall of 2012.
 
 The UC Davis dissertation latex template was writted by Tyrell McAllister and is available [here](http://galois.math.ucdavis.edu/doku.php?id=thesistips).
 
