@@ -169,7 +169,7 @@ Despite these reservations, our results present clear quantitative evidence that
 The deviance information criterion is
  \[ DIC = -2 \overline{\log(\mathcal{L}(\widehat{\theta}))} + 2p_D
 \]
-where $\overline{\log(\mathcal{L}(\widehat{\theta}))}$ is the average deviance over 100,000 simulations using WinBUGS and $p_D$ is the effective number of parameters.  The relative distances, rather than absolute magnitudes, of the DIC scores of the models are the basis for comparing them, and so it is common to report each model’s $\Delta$ DIC relative to the top model (with the lowest DIC score).  Among all R models used in the model comparison, DIC weights are calculating for model $i$ with associated $\Delta$ DIC $d_i$ via
+where $\overline{\log(\mathcal{L}(\widehat{\theta}))}$ is the average deviance over 100,000 simulations using WinBUGS and $p_D$ is the effective number of parameters.  The relative distances, rather than absolute magnitudes, of the DIC scores of the models are the basis for comparing them, and so it is common to report each modelï¿½s $\Delta$ DIC relative to the top model (with the lowest DIC score).  Among all R models used in the model comparison, DIC weights are calculating for model $i$ with associated $\Delta$ DIC $d_i$ via
 \[w_i = \frac{\exp(-0.5 d_i)}{\sum_{r=1}^R exp(-0.5 d_r)}
 \]
 Rather than report the parameter estimates from a particular model, we can use the DIC weights and parameter estimates of all models to create model-weighted estimates (Burnham and Anderson, 2002).  Specifically, the vector of model-weighted estimates across a set of R models is given by

@@ -1,0 +1,181 @@
+
+% LaTeX template file for a UC Davis Mathematics Ph.D. Dissertation
+
+% The UC Davis Dissertation Formatting Requirements can be found at
+% http://www.gradstudies.ucdavis.edu/students/filing.html
+
+% SPECIFY AN APPROPRIATE DOCUMENT CLASS WITH APPROPRIATE OPTIONS:
+\documentclass[letterpaper, 12pt, oneside]{book}
+
+% SPECIFY THE PAGE AND HEADER FORMATTING (which is completely a hack):
+\usepackage[left=108pt, right=74pt, top=108pt, bottom=81pt, dvips, pdftex]{geometry}
+\usepackage{fancyhdr} % See this package's documentation for more
+\usepackage{natbib}
+\usepackage{rotating} % needed to get sidewaystable to work
+\pagestyle{fancy}     % information about the following commands
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+\fancyhead[L]{\rightmark}
+\renewcommand{\headrulewidth}{0pt} % change this to put a line between
+                               % the header and the main text
+
+% The following command sets the name of the Bibliography:
+\renewcommand{\bibname}{References}
+
+% EXTREMELY COMMON LaTeX PACKAGES TO INCLUDE:
+\usepackage{amsmath,amsthm, amsfonts,amssymb} % For AMS Beautification
+\usepackage{setspace} % For Single & Double Spacing Commands
+%    \usepackage[linktocpage,bookmarksopen,bookmarksnumbered,% For PDF navigation
+%                pdftitle={UC Davis Ph.D. Doctoral Thesis},%   and URL hyperlinks
+%                pdfauthor={Department of Mathematics},%
+%                pdfsubject={UC Davis Ph.D. Doctoral Thesis},%
+%                pdfkeywords={UC Davis Ph.D. Doctoral Thesis}]{hyperref}
+
+\usepackage{graphicx} % For including and formatting image files
+\usepackage[toc,page]{appendix} % For Control of Appendix Numbering & Location
+
+
+\DeclareMathOperator{\cov}{cov}
+
+% DEFINE NEW ANY COMMANDS (for your own convenience):
+\newcommand{\n}{\vspace{12pt}} % for typesetting line breaks with 12
+                           % Postscript points of extra whitespace
+
+\newcommand{\newchapter}[3] % for typesetting new chapters with the
+{                           % correct initial page numbering style
+% Arguments: (#1) Short name for chapter, which is used in 
+%                 any running headers
+%            (#2) Medium length name for chapter, which is
+%                 used in the table of contents
+%            (#3) Long name for chapter, which is typeset at 
+%                 the starting the chapter
+    \chapter[#2]{#3}
+    \chaptermark{#1}
+    \thispagestyle{myheadings}
+}
+
+\begin{document}
+
+% The following commands produce page numbering at the bottom
+% center using roman numerals per UC Davis requirements for the
+% front matter of the dissertation:
+\pagenumbering{roman}
+\pagestyle{plain}
+
+% % -- TITLE PAGE
+
+% The following command produces single-spaced lines for the title page:
+\singlespacing
+
+~\vspace{-0.75in} % to force the title up a bit higher
+\begin{center}
+  \begin{Large}
+    Inferring General Mechanisms of Cultural Evolution \\ in Observational Settings
+  \end{Large}\\
+  \vspace{\baselineskip}
+  By\\
+  \vspace{\baselineskip}
+  BRET ALEXANDER BEHEIM\\
+  B.A. (University of California at Santa Barbara) 2004 \\ M.A. (University of Chicago) 2006 \\
+  \vspace{\baselineskip}
+  DISSERTATION\\
+  \vspace{\baselineskip}
+  Submitted in partial satisfaction of the requirements for the degree of\\
+  \vspace{\baselineskip}
+  DOCTOR OF PHILOSOPHY\\
+  \vspace{\baselineskip}
+  in\\
+  \vspace{\baselineskip}
+  ECOLOGY\\
+  \vspace{\baselineskip}
+  in the\\
+  \vspace{\baselineskip}
+  OFFICE OF GRADUATE STUDIES\\
+  \vspace{\baselineskip}
+  of the\\
+  \vspace{\baselineskip}
+  UNIVERSITY OF CALIFORNIA,\\
+  \vspace{\baselineskip}
+  DAVIS\\
+  \vspace{\baselineskip}
+  Approved:\\
+  \vspace{\baselineskip}
+  \rule{2.5in}{1pt}\\
+  Peter J. Richerson, Chair \\
+  \vspace{\baselineskip}
+  \rule{2.5in}{1pt}\\
+  Richard McElreath \\
+  \vspace{\baselineskip}
+  \rule{2.5in}{1pt}\\
+  Monique Borgerhoff Mulder \\
+  \vspace{\baselineskip}
+  Committee in Charge\\
+  \vspace{\baselineskip}
+  2012\\
+
+\end{center}
+
+\newpage
+
+% The following command produces double-spaced lines for the
+% remainder of the document:
+\doublespacing
+
+% % -- TABLE OF CONTENTS
+
+% The following command creates the table of contents:
+\tableofcontents
+
+% The following command, though it follows the above 
+% ``\tableofcontents'' command, actually causes the Table of 
+% Contents to start on a new page:
+\newpage
+
+% % -- ABSTRACT
+
+~\vspace{-1in} % to force the attribution text up a bit higher
+\begin{flushright}
+\singlespacing
+Bret A. Beheim\\
+~September 2012\\
+Graduate Group in Ecology
+\end{flushright}
+
+\centerline{\underline{Inferring General Mechanisms of Cultural Evolution in Observational Settings}}
+
+\centerline{\textbf{Abstract}}
+
+\input{0_abstract}
+
+\newpage
+
+% % -- ACKNOWLEDGMENTS
+
+\chapter*{\vspace{-1.5in}Acknowledgments}
+
+\input{0_acknowledgements}
+
+\newpage
+
+% % -- BEGIN TEXT OF THESIS
+
+% The following commands produce page numbering at the top right
+% using arabic numerals per UC Davis requirements for the main
+% text of the dissertation:
+\pagestyle{fancy}
+\pagenumbering{arabic}
+
+\include{1_canoes}
+
+\include{2_rtdice}
+
+\include{3_gofirstmove}
+
+\begin{thebibliography}{200}
+\thispagestyle{myheadings}
+\bibliographystyle{apalike}     % The style of your bibliography
+\input{4_bibliography_manual}
+\end{thebibliography}
+
+\end{document}
